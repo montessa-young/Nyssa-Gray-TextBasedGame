@@ -5,5 +5,9 @@ Teacher: Mrs. Young
 
 Scrum Master: Tristan Jennings
 
+<<<<<<< HEAD
 
-developers: Derek Padilla
+Developers:
+Derek Padilla
+Dominic Halbesleben
+
