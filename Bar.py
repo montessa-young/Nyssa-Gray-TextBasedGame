@@ -16,11 +16,52 @@ def print_very_slow(text):
 def bar():
     print_slow("Welcome to the SUPER DUPER FANTESTICAL MYSTICAL MAGICAL MOON BEAN ICECREAM TAPROOM!")
     print(" ")
+    choice = int(input("Enter your choice here: "))
+
+    if choice == 1:
+        print_slow("An old man comes from behind the bar...'WELCOME AND HOWDY BUDDY WHAT CAN I GET FOR YOU????")
+        print_slow("FOR SALE WE HAVE...")
+        print("1) MODELO~~~$10)
+        print("2) BUDLIGHT~~~$15")
+        print("3) WISKEY~~~$25")
+        print("4) APPLE JUICE~~~$6")
+        print("5) MARGARITA~~~$67")
+        print("6) MONSTER!!!!!!!~~~$2")
+        print("7) CORONA~~~$15")
+        print("8) AQUA~~~$1")
+        drinky = int(input("Enter the number of the drink you want to try: ")
+        if drinky == 1:
+            print("'ONE MODELO COMING UP, THAT'LL BE $10'")
+            print("'ONE BUDLIGHT COMING UP, THAT'LL BE $15'")
+            print("'ONE WISKEY COMING UP, THAT'LL BE $25'")
+            print("'ONE APPLE JUICE COMING UP, THAT'LL BE $6'")
+            print("'ONE MARGARITA COMING UP, THAT'LL BE $67'")
+            print("'ONE MONSTER!!!!!! COMING UP, THAT'LL BE $2'")
+            print("'ONE CORONA COMING UP, THAT'LL BE $15'")
+
+    if choice == 2:
+        print_slow("WELCOME TO OUR VERY SPECIAL SLOT MACHINE!!!")
+        print(" ")
+        print_slow("Heres how it works. We'll have you enter the amount you want to bet and your special number and run two of our die. If your number is equal to them YOU WIN! Otherwise you lose!")
     while True:
         print_slow("We offer a wide variety of drinks and even our very special SLOTS MACHINE!!!")
         print(" ")
         print_slow("Type 1 to order a drink or type 2 to try your luck at the slot game! If you're tryna leave....YOU SUCK and we hate you:( but type 3 I guess:(((")
         print(" ")
+        print_slow("The first slot reads...")
+        print_very_slow(f"......{die_1}!")
+        print_slow(f"The second slot reads...")
+        print_very_slow(f"......{die_2}!")
+    if choice == 3:
+        print_slow("Are you sure????")
+        leave = int(input("Type 1 for yes and 2 for no: "))
+        if leave == 1:
+            print_slow("Alright then:(")
+            break
+        if leave == 2:
+            print_slow("BET!!!")
+    else:
+        print("Invalid entry, try again")
         choice = int(input("Enter your choice here: "))
 
         if choice == 1:
