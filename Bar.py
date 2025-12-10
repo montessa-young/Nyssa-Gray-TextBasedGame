@@ -26,7 +26,7 @@ while True:
     if choice == 1:
         print_slow("An old man comes from behind the bar...'WELCOME AND HOWDY BUDDY WHAT CAN I GET FOR YOU????")
         print_slow("FOR SALE WE HAVE...")
-        print("1) MODELO~~~$10)
+        print("1) MODELO~~~$10")
         print("2) BUDLIGHT~~~$15")
         print("3) WISKEY~~~$25")
         print("4) APPLE JUICE~~~$6")
@@ -34,16 +34,23 @@ while True:
         print("6) MONSTER!!!!!!!~~~$2")
         print("7) CORONA~~~$15")
         print("8) AQUA~~~$1")
-        drinky = int(input("Enter the number of the drink you want to try: ")
+        drinky = int(input("Enter the number of the drink you want to try: "))
         if drinky == 1:
             print("'ONE MODELO COMING UP, THAT'LL BE $10'")
+        if drinky == 2:
             print("'ONE BUDLIGHT COMING UP, THAT'LL BE $15'")
+        if drinky == 3:
             print("'ONE WISKEY COMING UP, THAT'LL BE $25'")
+        if drinky == 4:
             print("'ONE APPLE JUICE COMING UP, THAT'LL BE $6'")
+        if drinky == 5:
             print("'ONE MARGARITA COMING UP, THAT'LL BE $67'")
+        if drinky == 6:
             print("'ONE MONSTER!!!!!! COMING UP, THAT'LL BE $2'")
+        if drinky == 7:
             print("'ONE CORONA COMING UP, THAT'LL BE $15'")
-
+        if drinky == 8:
+            print("'ONE CUP OF AQUA COMING UP, THAT'LL BE $1'")
     if choice == 2:
         print_slow("WELCOME TO OUR VERY SPECIAL SLOT MACHINE!!!")
         print(" ")
