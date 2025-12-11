@@ -1,5 +1,3 @@
-
-
 def wallet():
     {
         "currency" : 10000
