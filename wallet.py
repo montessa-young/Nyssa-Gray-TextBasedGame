@@ -1,10 +1,11 @@
 
 
-wallet={
-    amount : 10000
+def wallet():
+    {
+        "currency" : 10000
     }
- 
-    
+    return "currency"
+
 
 
 
