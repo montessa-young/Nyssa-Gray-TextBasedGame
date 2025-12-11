@@ -36,27 +36,21 @@ while True:
         print("8) AQUA~~~$1")
         drinky = int(input("Enter the number of the drink you want to try: "))
         if drinky == 1:
-            print_slow("'ONE MODELO COMING UP, THAT'LL BE $10'")
+            print("'ONE MODELO COMING UP, THAT'LL BE $10'")
         if drinky == 2:
-            print_slow("'ONE BUDLIGHT COMING UP, THAT'LL BE $15'")
+            print("'ONE BUDLIGHT COMING UP, THAT'LL BE $15'")
         if drinky == 3:
-            print_slow("'ONE WISKEY COMING UP, THAT'LL BE $25'")
+            print("'ONE WISKEY COMING UP, THAT'LL BE $25'")
         if drinky == 4:
-            print_slow("'ONE APPLE JUICE COMING UP, THAT'LL BE $6'")
+            print("'ONE APPLE JUICE COMING UP, THAT'LL BE $6'")
         if drinky == 5:
-            print_slow("'ONE MARGARITA COMING UP, THAT'LL BE $67'")
+            print("'ONE MARGARITA COMING UP, THAT'LL BE $67'")
         if drinky == 6:
-            print_slow("'ONE MONSTER!!!!!! COMING UP, THAT'LL BE $2'")
-            print_slow("'FOR SALE WE HAVE THESE THREE OPTIONS: ")
-            print_slow("1) White Monster")
-            print_slow("2)VIKING BERRY MONSTER:)")
-            print_slow("3) Pipeline Punch Monster")
-            monster = int(input("Enter your choice of monster here: "))
-            print_slow("I HEARD ONE VIKING BERRY MONSTER")
+            print("'ONE MONSTER!!!!!! COMING UP, THAT'LL BE $2'")
         if drinky == 7:
-            print_slow("'ONE CORONA COMING UP, THAT'LL BE $15'")
+            print("'ONE CORONA COMING UP, THAT'LL BE $15'")
         if drinky == 8:
-            print_slow("'ONE CUP OF AQUA COMING UP, THAT'LL BE $1'")
+            print("'ONE CUP OF AQUA COMING UP, THAT'LL BE $1'")
     if choice == 2:
         print_slow("WELCOME TO OUR VERY SPECIAL SLOT MACHINE!!!")
         print(" ")
