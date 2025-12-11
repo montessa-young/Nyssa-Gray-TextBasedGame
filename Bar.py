@@ -75,7 +75,5 @@ while True:
             break
         if leave == 2:
             print_slow("BET!!!")
-    else:
-        print("Invalid entry, try again")
 
 
