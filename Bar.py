@@ -74,7 +74,7 @@ def bar_scene():
             print_slow("Heres how it works. We'll have you enter the amount you want to bet and your special number and run two of our die. If your number is equal to them YOU WIN! Otherwise you lose!")
             print(" ")
             bid_amount = int(input("Enter the amount you want to bid: "))
-            lucky_number = int(input("Enter your lucky number here: "))
+            lucky_number = int(input("Enter your lucky number here (1-6): "))
             die_1 = random.randint(1,6)
             die_2 = random.randint(1,6)
             print(" ")
@@ -91,6 +91,10 @@ def bar_scene():
                 print("OH WOW THEY BOTH MATCH!!! YOUR MULTIPLIER IS 5X")
                 new_amount = bid_amount * 5
                 new_wallet = new_amount + wallet
+                print(f"Your new wallet total is {new_wallet}")
+            if lucky_number != die_1 and lucky_number != die_2:
+                print("You lost:( Your money has been subtracted")
+                new_wallet = wallet - bid_amount
                 print(f"Your new wallet total is {new_wallet}")
         if choice == 3:
             print_slow("Are you sure????")
