@@ -43,21 +43,21 @@ def bar_scene():
             drinky = int(input("Enter the number of the drink you want to try: "))
             if drinky == 1:
                 print_slow("'ONE MODELO COMING UP, THAT'LL BE $10'")
-                wallet - 10
+                wallet["currency"] - 10
             if drinky == 2:
-                wallet - 15
+                wallet["currency"] - 15
                 print_slow("'ONE BUDLIGHT COMING UP, THAT'LL BE $15'")
             if drinky == 3:
-                wallet - 25
+                wallet["currency"] - 25
                 print_slow("'ONE WISKEY COMING UP, THAT'LL BE $25'")
             if drinky == 4:
-                wallet - 6
+                wallet["currency"] - 6
                 print_slow("'ONE APPLE JUICE COMING UP, THAT'LL BE $6'")
             if drinky == 5:
-                wallet - 67
+                wallet["currency"] - 67
                 print_slow("'ONE MARGARITA COMING UP, THAT'LL BE $67'")
             if drinky == 6:
-                wallet - 2
+                wallet["currency"] - 2
                 print_slow("'ONE MONSTER!!!!!! COMING UP, THAT'LL BE $2'")
                 print_slow("'FOR SALE WE HAVE THESE THREE OPTIONS: ")
                 print_slow("1) White Monster")
@@ -66,10 +66,10 @@ def bar_scene():
                 monster = int(input("Enter your choice of monster here: "))
                 print_slow("I HEARD ONE VIKING BERRY MONSTER")
             if drinky == 7:
-                wallet - 15
+                wallet["currency"] - 15
                 print_slow("'ONE CORONA COMING UP, THAT'LL BE $15'")
             if drinky == 8:
-                wallet - 1
+                wallet["currency"] - 1
                 print_slow("'ONE CUP OF AQUA COMING UP, THAT'LL BE $1'")
         if choice == 2:
             print_slow("WELCOME TO OUR VERY SPECIAL SLOT MACHINE!!!")
