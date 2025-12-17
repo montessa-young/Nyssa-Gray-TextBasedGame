@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from intro import print_slow, start_game
 from Bar import bar, print_very_slow
 from armor import armor_price
@@ -104,5 +105,13 @@ def bar_scene():
                 print_slow("BET!!!!")
 
 
+=======
+from intro import start_game
+from Bar import bar_scene
+from armor import armor_price
+currency = 1000
+health = 100
+>>>>>>> 70b0c3c996fb7a2ddd8d698c7308bbd804412923
 start_game()
-bar()
+armor_price(currency, health)
+bar_scene()
