@@ -21,7 +21,7 @@ def armor_price(currency, health):
         if choice_armor == 1:
             currency = currency - prices["titanium"]
             health = health + 100
-            print(f"The cost of this armor is {prices["titanium"]}")
+            print(f"The cost of this armor is 700")
             print(f"Your wallet now has {currency}")
             print(f"Your health is now {health}")
             break
@@ -29,7 +29,7 @@ def armor_price(currency, health):
         elif choice_armor == 2:
             currency = currency - prices["leather"]
             health = health + 50
-            print(f"The cost of this armor is {prices["leather"]}")
+            print(f"The cost of this armor is 500")
             print(f"Your wallet now has {currency}")
             print(f"Your health is now {health}")
             break
@@ -37,13 +37,13 @@ def armor_price(currency, health):
         elif choice_armor == 3:
             currency = currency - prices["paper_bag"]
             health = health + 25
-            print(f"The cost of this armor is {prices["paper_bag"]}")
+            print(f"The cost of this armor is 250")
             print(f"Your wallet now has {currency}")
             print(f"Your health is now {health}")
             break
         elif choice_armor == 4:
             currency = currency - prices["no armor"]
-            print(f"The cost of this armor is {prices["no_armor"]}")
+            print(f"The cost of this armor is 0")
             print(f"Your wallet now has {currency}")
             print(f"Your health is now {health}")
             break

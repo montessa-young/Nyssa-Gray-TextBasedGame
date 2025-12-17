@@ -4,10 +4,8 @@ from wallet import wallet
 #Still needs a wallet added from a seperate file. Ask miss.
 #lines 33
 wallet()
-def bar_scene():
-    wallet = {
-        "currency" : 10000
-        }
+def bar_scene(currency, health):
+
     def print_slow(text):
         for char in text:
             print(char, end='', flush=True)
@@ -22,6 +20,8 @@ def bar_scene():
 
     print_slow("Welcome to the SUPER DUPER FANTESTICAL MYSTICAL MAGICAL MOON BEAN ICECREAM TAPROOM!")
     print(" ")
+    print(f" You currently have this much money {currency}")
+    print(f" Your health is at level {health}")
     while True:
         print_slow("We offer a wide variety of drinks and even our very special SLOTS MACHINE!!!")
         print(" ")
@@ -31,6 +31,8 @@ def bar_scene():
 
         if choice == 1:
             print_slow("An old man comes from behind the bar...'WELCOME AND HOWDY BUDDY WHAT CAN I GET FOR YOU????")
+            print(f" You currently have this much money {currency}")
+            print(f" Your health is at level {health}")
             print_slow("FOR SALE WE HAVE...")
             print("1) MODELO~~~$10")
             print("2) BUDLIGHT~~~$15")
@@ -43,21 +45,29 @@ def bar_scene():
             drinky = int(input("Enter the number of the drink you want to try: "))
             if drinky == 1:
                 print_slow("'ONE MODELO COMING UP, THAT'LL BE $10'")
-                wallet["currency"] - 10
+                currency = currency - 10
+                health = health -3
             if drinky == 2:
-                wallet["currency"] - 15
+                currency = currency - 15
+                health = health - 4
                 print_slow("'ONE BUDLIGHT COMING UP, THAT'LL BE $15'")
+
             if drinky == 3:
-                wallet["currency"] - 25
+                currency = currency - 25
+                health = health + 10
                 print_slow("'ONE WISKEY COMING UP, THAT'LL BE $25'")
+
             if drinky == 4:
-                wallet["currency"] - 6
+                currency = currency - 6
+                health = health + 20
                 print_slow("'ONE APPLE JUICE COMING UP, THAT'LL BE $6'")
             if drinky == 5:
-                wallet["currency"] - 67
+                currency = currency - 67
+                health = health - 10
                 print_slow("'ONE MARGARITA COMING UP, THAT'LL BE $67'")
             if drinky == 6:
-                wallet["currency"] - 2
+                currency = currency - 2
+                health = health + 10
                 print_slow("'ONE MONSTER!!!!!! COMING UP, THAT'LL BE $2'")
                 print_slow("'FOR SALE WE HAVE THESE THREE OPTIONS: ")
                 print_slow("1) White Monster")
@@ -66,14 +76,18 @@ def bar_scene():
                 monster = int(input("Enter your choice of monster here: "))
                 print_slow("I HEARD ONE VIKING BERRY MONSTER")
             if drinky == 7:
-                wallet["currency"] - 15
+                currency = currency - 15
+                health = health - 1
                 print_slow("'ONE CORONA COMING UP, THAT'LL BE $15'")
             if drinky == 8:
-                wallet["currency"] - 1
+                currency = currency - 1
+                health = health + 1
                 print_slow("'ONE CUP OF AQUA COMING UP, THAT'LL BE $1'")
         if choice == 2:
             print_slow("WELCOME TO OUR VERY SPECIAL SLOT MACHINE!!!")
             print(" ")
+            print(f" You currently have this much money {currency}")
+            print(f" Your health is at level {health}")
             print_slow("Heres how it works. We'll have you enter the amount you want to bet and your special number and run two of our die. If your number is equal to them YOU WIN! Otherwise you lose!")
             print(" ")
             bid_amount = float(input("Enter the amount you want to bid: "))
@@ -88,16 +102,19 @@ def bar_scene():
             if lucky_number == die_1 or lucky_number == die_2:
                 print("YOU WIN!!! The multiplier added is 2x")
                 new_amount = bid_amount * 2
-                new_wallet = new_amount + wallet["currency"]
+                new_wallet = new_amount + currency
+                health = health + 1
                 print(f"Your new wallet total is {new_wallet}")
             if lucky_number == die_1 and lucky_number == die_2:
                 print("OH WOW THEY BOTH MATCH!!! YOUR MULTIPLIER IS 5X")
                 new_amount = bid_amount * 5
-                new_wallet = new_amount + wallet["currency"]
+                new_wallet = new_amount + currency
+                health = health + 10
                 print(f"Your new wallet total is {new_wallet}")
             if lucky_number != die_1 and lucky_number != die_2:
                 print("You lost:( Your money has been subtracted")
-                new_wallet = wallet["currency"] - bid_amount
+                new_wallet = currency - bid_amount
+                health = health - 5
                 print(f"Your new wallet total is {new_wallet}")
         if choice == 3:
             print_slow("Are you sure????")
